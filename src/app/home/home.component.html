@@ -1,12 +1,13 @@
 <section>
     <form class="w-1/2">
-        <input type="text" placeholder="Filter by city"
-            class="w-3/4 p-1 mr-2 border border-blue-500 rounded outline-blue-600">
-        <button class="p-1 font-semibold text-white rounded bg-cyan-400" type="button">Search</button>
+        <input type="text" placeholder="Search by city"
+            class="w-3/4 p-1 px-2 mr-2 border border-blue-500 rounded outline-blue-600" #filter>
+        <button class="p-1 font-semibold text-white rounded bg-cyan-400" type="button"
+            (click)="filterResults(filter.value)">Search</button>
     </form>
 </section>
-<section class="grid gap-4 lg:grid-cols-4 md:grid-cols-3">
-    <div *ngFor="let housingLocation of housingLocationList">
+<section class="grid gap-4 py-10 lg:grid-cols-4 md:grid-cols-3">
+    <div *ngFor="let housingLocation of filteredLocationList">
         <app-housing-location [housingLocation]="housingLocation">
         </app-housing-location>
     </div>

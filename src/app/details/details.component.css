@@ -1,5 +1,5 @@
 .listing-photo {
-    height: 600px;
+    height: 800px;
     width: 50%;
     object-fit: cover;
     border-radius: 30px;
@@ -7,7 +7,7 @@
 }
 
 .listing-heading {
-    font-size: 48pt;
+    font-size: 40pt;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -54,10 +54,12 @@ label {
 }
 
 input {
-    font-size: 16pt;
+    font-size: 14pt;
     margin-bottom: 15px;
-    padding: 10px;
+    padding-top: 10px;
     width: 400px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
     border-top: none;
     border-right: none;
     border-left: none;
